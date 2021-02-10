@@ -1,0 +1,99 @@
+<!--
+    JSGuys Nav Drawer
+
+    Tutorial: Still being made
+    
+    Open for all to modify and redistribute, can be used for commercial purposes.
+    I really don't care what you do with it, and I need no attribution, although if a friend asks,
+    I would appreciate it if you pointed them to my video.
+-->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Links-->
+        <link rel="stylesheet" href="./nav.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!--Scripts-->
+        <script src="./app.js"></script>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="closed">
+            <div id="logo">
+                <a href="/">
+                    <!--I reccomend writing your apps name here in the span, but you can mess around with it and put an image logo instead-->
+                    <span>GENERIC APP</span>
+                </a>
+                <div class="burger-icon"><div class="hamburger"></div></div>
+            </div>
+            <ul id="nav-items">
+                <!--Use this li as an example for each item in your nav-->
+                <li>
+                    <!--You must use an svg icon here, you can use svgs from font-awesome, go to here https://www.youtube.com/channel/UCxJnh6wCpfDJQftNOfQkVjQ and find the video tutorial on this to find out how to get svgs from fontawesome-->
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="user-cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-user-cog fa-w-20 fa-3x"><g class="fa-group"><path fill="currentColor" d="M636.3 388.2l-25.8-14.9a117.31 117.31 0 0 0 0-42.6l25.8-14.9a7.24 7.24 0 0 0 3.3-8.5 150.07 150.07 0 0 0-33.2-57.4 7.29 7.29 0 0 0-9-1.4l-25.8 14.9a117.4 117.4 0 0 0-36.9-21.3v-29.8a7.28 7.28 0 0 0-5.7-7.1 150.88 150.88 0 0 0-66.2 0 7.28 7.28 0 0 0-5.7 7.1v29.8a117.4 117.4 0 0 0-36.9 21.3l-25.8-14.9a7.31 7.31 0 0 0-9 1.4 150.07 150.07 0 0 0-33.2 57.4 7.37 7.37 0 0 0 3.3 8.5l25.8 14.9a117.31 117.31 0 0 0 0 42.6l-25.8 14.9a7.24 7.24 0 0 0-3.3 8.5 150.82 150.82 0 0 0 33.2 57.4 7.29 7.29 0 0 0 9 1.4l25.8-14.9a117.4 117.4 0 0 0 36.9 21.3v29.8a7.28 7.28 0 0 0 5.7 7.1 150.88 150.88 0 0 0 66.2 0 7.28 7.28 0 0 0 5.7-7.1v-29.8a117.4 117.4 0 0 0 36.9-21.3l25.8 14.9a7.31 7.31 0 0 0 9-1.4 150.07 150.07 0 0 0 33.2-57.4 7.37 7.37 0 0 0-3.3-8.5zM496 400.5a48.5 48.5 0 1 1 48.5-48.5 48.55 48.55 0 0 1-48.5 48.5z" class="fa-secondary"></path><path fill="currentColor" d="M425.2 491.7v-9.2c-2.3-1.2-4.6-2.6-6.8-3.9l-7.9 4.6a39.23 39.23 0 0 1-48.5-7.3 182.34 182.34 0 0 1-40.2-69.6 39.11 39.11 0 0 1 17.9-45.7l7.9-4.6q-.15-3.9 0-7.8l-7.9-4.6a39.07 39.07 0 0 1-17.9-45.7c.9-2.9 2.2-5.8 3.2-8.7-3.8-.3-7.5-1.2-11.4-1.2h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h352a47.94 47.94 0 0 0 27.2-8.5 39 39 0 0 1-2-11.8zM224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128z" class="fa-primary"></path></g></svg>
+                    <!--Replace the href and the links text to customize where this links to-->
+                    <a href="#" class="link">Account Settings</a>
+                </li>
+                <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <li>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="mail-bulk" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-mail-bulk fa-w-18 fa-3x"><g class="fa-group"><path fill="currentColor" d="M288 256H32a32 32 0 0 0-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288a32 32 0 0 0-32-32zM160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480a32 32 0 0 0 32 32h256a32 32 0 0 0 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm288-224v64h64v-64z" class="fa-secondary"></path><path fill="currentColor" d="M544 160H224a32 32 0 0 0-32 32v32h96a64.09 64.09 0 0 1 63.71 57.82l.29-.22V416h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zm-32 128h-64v-64h64zm-64-160V32a32 32 0 0 0-32-32H96a32 32 0 0 0-32 32v192h96v-32a64.07 64.07 0 0 1 64-64z" class="fa-primary"></path></g></svg>
+                    <a href="#" class="link">Posts</a>
+                </li>
+                <li>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-home fa-w-18 fa-3x"><g class="fa-group"><path fill="currentColor" d="M336 463.59V368a16 16 0 0 0-16-16h-64a16 16 0 0 0-16 16v95.71a16 16 0 0 1-15.92 16L112 480a16 16 0 0 1-16-16V300.06l184.39-151.85a12.19 12.19 0 0 1 15.3 0L480 300v164a16 16 0 0 1-16 16l-112-.31a16 16 0 0 1-16-16.1z" class="fa-secondary"></path><path fill="currentColor" d="M573.32 268.35l-25.5 31a12 12 0 0 1-16.9 1.65L295.69 107.21a12.19 12.19 0 0 0-15.3 0L45.17 301a12 12 0 0 1-16.89-1.65l-25.5-31a12 12 0 0 1 1.61-16.89L257.49 43a48 48 0 0 1 61 0L408 116.61V44a12 12 0 0 1 12-12h56a12 12 0 0 1 12 12v138.51l83.6 68.91a12 12 0 0 1 1.72 16.93z" class="fa-primary"></path></g></svg>
+                    <a href="#" class="link">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <!--Replace what I wrote in the main tag with whatever you want as your page content-->
+            <center><h1>What Is HTML</h1></center>
+            <br><hr width="80%"><br>
+            <span class="paragraph">
+                <center>
+                    HTML:
+                    <br><hr width="100px">
+                    <span class="paragraph">
+                        H - Hyper<br>
+                        T - Text<br>
+                        M - Markup<br>
+                        L - Language<br>
+                    </span>
+                </center>
+                <center>
+                    HTML is used as thet structure of websites, and what makes it special is that you can link to multiple html documents, making it easier to share text online. While the intent of the original creators wasn't to create a stylish way to display information, as the demand for internet grew larger, using simple styling tags such as the i tag wasn't going to work, and that is where the story of css started.
+                </center>
+            </span>
+            <br>
+            <center><h1>What Is HTML</h1></center>
+            <br><hr width="80%"><br>
+            <span class="paragraph">
+                <center>
+                    CSS:
+                    <br><hr width="100px">
+                    <span class="paragraph">
+                        C - Cascading<br>
+                        S - Style<br>
+                        S - Sheets<br>
+                    </span>
+                </center>
+                <center>
+                    CSS was a revolutionary invention for the internet, because it allowed you to seperate your styling from your structure, and it made doing advanced styling a million times easier. The introduction of CSS to the web changed our expectations of the internet, and you could start to see many companies use this new invention on their websites, but there is still something missing, interactivity, and that is when JavaScript is introduced.
+                </center>
+            </span>
+            <br>
+            <center><h1>What Is JavaScript</h1></center>
+            <br><hr width="80%"><br>
+            <span class="paragraph">
+                <center>
+                    Now one thing that confuses many people is the name, while it has the word Java in its name, it is no where near Java. JavaScript is a very interesting language right now, because at the start, JavaScript was used in websites, such as this one, for interactivity, but then google introduced the V8 engine which allowed JavaScript to be used on servers as a backend, but we'll be talking about the web based JavaScript. This JavaScript allows you to traverse the DOM (DocumentObjectModel) and change the webpage dynamically, without HTML or CSS. This was crazy, because before JavaScript, you could only build your web pages to a certain point of beauty, but now you can animate the page way easier, and you can now make 3d apps, browser games, 3d animations, and more that you couldn't really do before JavaScript.
+                </center>
+            </span>
+        </main>
+    </body>
+</html>
